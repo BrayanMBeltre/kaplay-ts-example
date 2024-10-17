@@ -1,5 +1,3 @@
-// TODO: document
-
 import kaplay, { type GameObj, type Vec2 } from "kaplay";
 
 const game = kaplay({
