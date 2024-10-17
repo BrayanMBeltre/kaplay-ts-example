@@ -6,11 +6,11 @@ const game = kaplay({
 
 const objs = [
 	"apple",
-	"lightening",
 	"coin",
+	"door",
 	"egg",
 	"key",
-	"door",
+	"lightening",
 	"meat",
 	"mushroom",
 ];
@@ -20,10 +20,10 @@ for (const obj of objs) {
 }
 
 game.loadBean();
-game.loadSound("hit", "/examples/sounds/hit.mp3");
-game.loadSound("shoot", "/examples/sounds/shoot.mp3");
-game.loadSound("explode", "/examples/sounds/explode.mp3");
-game.loadSound("OtherworldlyFoe", "/examples/sounds/OtherworldlyFoe.mp3");
+game.loadSound("hit", "/sounds/hit.mp3");
+game.loadSound("shoot", "/sounds/shoot.mp3");
+game.loadSound("explode", "/sounds/explode.mp3");
+game.loadSound("OtherworldlyFoe", "/sounds/OtherworldlyFoe.mp3");
 
 game.scene("battle", () => {
 	const BULLET_SPEED = 1200;
